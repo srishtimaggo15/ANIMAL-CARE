@@ -1,0 +1,773 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+ body {
+    background-image:  url(https://d17fnq9dkz9hgj.cloudfront.net/uploads/2013/06/160528004-632x353.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+}
+
+.main ul{
+  display: inline-flex;
+  list-style: none;
+}
+.main ul li{
+  width: 130px;
+  margin: 5px 2px 5px 3px;
+  padding: 0px;
+}
+.main ul li a{
+  text-decoration: none;
+  color: white;
+}
+.main ul li:hover{
+  background-color: gray;
+  border-radius: 200px;
+}
+.main {
+  max-width: 1100px;
+  margin-left: 150px;
+  margin-top: 10px;
+  text-align: center;
+  background-color: black;
+}
+.main .fa{
+  margin-right: 10px;
+}
+.sub-menu-1{
+  display: none;
+}
+.main ul li:hover .sub-menu-1{
+  display: inline-flex;
+  position: absolute;
+  background: black;
+  margin-top: 18px;
+  margin-left: 15px;
+
+}
+.main ul li:hover .sub-menu-1 ul{
+  display: inline-block;
+  margin: 10px;
+}
+.main ul li:hover .sub-menu-1 ul li{
+  width: 130px;
+  padding: 10px;
+  border-bottom: 1px dotted black;
+  border-radius: 0px;
+  text-align: left;
+  background: transparent;
+}
+.main ul li:hover .sub-menu-1 ul li:last-child{
+  border-bottom: none;
+}
+.main ul li:hover .sub-menu-1 ul li a:hover{
+  color: gray;
+}
+.logo1 img {
+  float: left;
+  width: 90px;
+  height: auto;
+}
+
+.title{
+  position: absolute;
+  top: 65%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+
+.title h1 {
+color: black;
+font-size: 70px; 
+}
+.button {
+   position: absolute;
+  top: 75%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+.btn {
+   border:2px #000;
+   padding: 10px 30px;
+   color: black;
+   text-decoration: none;
+   font-weight: bold;
+}
+.btn:hover {
+   color: darkblue;
+}
+.search {
+width: 100%;
+position: relative;
+display: flex;
+}
+
+.searchTerm {
+width: 100%;
+top: 60%;
+border: 3px solid black;
+border-right: none;
+padding: 5px;
+height: 20px;
+border-radius: 5px 0 0 5px;
+outline: none;
+color: #9DBFAF;
+}
+
+.searchTerm:focus{
+color: olivedrab;
+}
+
+.searchButton {
+width: 40px;
+height: 36px;
+border: 1px solid #00B4CC;
+background: #00B4CC;
+text-align: center;
+color: #fff;
+border-radius: 0 5px 5px 0;
+cursor: pointer;
+font-size: 20px;
+}
+
+.wrap{
+width: 30%;
+position:absolute; 
+top: 55%;
+left: 51%;
+transform: translate(-50%, -50%);
+}
+
+#header{
+    height: 100vh;
+    background-image: url("imge1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+ .header-text{
+    margin: 140px 100px 100px 100px;
+    max-width: 350px;
+} 
+.header-text h1{
+    font-size: 34px;
+}
+
+.container{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+.square{
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    background: #000;
+    margin: 15px 0;
+}
+
+.common-button{
+    padding: 18px 40px;
+    background: transparent;
+    outline: none;
+    border: 2px solid #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.common-button:hover{
+    font-size: 18px;
+    background-color: black;
+    color: white;
+}
+
+.common-button p{
+    font-size: 15px;
+    line-height: 18px;
+    color: #777777;
+}
+
+ .header-text button{
+    margin-top: 20px;
+    margin-bottom: 60px;
+} 
+
+.line-1{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: #000;
+}
+
+.line-2{
+    width: 80px;
+    height: 1px;
+    display: inline-block;
+    background: #000;
+}
+
+.line-3{
+    width: 60px;
+    height: 1px;
+    display: inline-block;
+    background: #000;
+}
+
+.line{
+    line-height: 8px;
+}
+
+/*About Us*/
+#about, #diseases, #help, #equipments, #food, #donate{
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-left-col{
+    flex-basis: 50%;
+}
+
+.about-left-col img{
+    width: 100%;
+}
+
+.about-right-col{
+    flex-basis: 50%;
+    text-align: right;
+}
+
+.about-text{
+    max-width: 500px;
+    margin-right: 100px;
+    margin-top: 20px;
+    display: inline-block
+}
+
+.about-text h2{
+    margin: 50px 0 10px;
+    font-size: 28px;
+    font-style: italic;
+}
+
+.about-text h3{
+    font-size: 20px;
+    font-style: italic;
+    color:#797979;
+}
+
+/*features*/
+#features{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.feature-row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature-col{
+    flex-basis: 25%;
+    text-align: center;
+}
+
+.feature-col img{
+    width: 300px;
+}
+
+.feature-col h4{
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.feature-btn{
+    margin: 80px auto 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.feature-btn .line{
+    display: inline-block;
+    margin-right: 25px;
+    text-align: right;
+}
+
+
+/*diseases*/
+#diseases{
+    padding: 100px 0;
+}
+
+.disease-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.disease-left-col{
+    flex-basis: 50%;
+}
+
+.disease-right-col{
+    flex-basis: 50%;
+}
+
+.disease-right-col img{
+    width: 100%;
+}
+
+.disease-text{
+    max-width: 350px;
+    margin-left: 100px;
+    
+}
+
+.disease-text p{
+    margin-right: 150px;
+}
+
+.disease-text button{
+    margin: 30px 0;
+}
+
+/*Nearby Help*/
+#help{
+    padding: 100px 0;
+}
+
+.help-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.help-left-col{
+    flex-basis: 50%;
+}
+
+.help-right-col{
+    flex-basis: 50%;
+}
+
+.help-right-col img{
+    width: 70%;
+}
+
+.help-text{
+    max-width: 350px;
+    margin-left: 100px;
+}
+
+.help-text button{
+    margin: 30px 0;
+}
+
+/*equipments*/
+#equipments{
+    padding: 100px 0;
+}
+
+.equipments-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.equipments-left-col{
+    flex-basis: 50%;
+}
+
+.equipments-right-col{
+    flex-basis: 50%;
+}
+
+.equipments-right-col img{
+    width: 100%;
+}
+
+.equipments-text{
+    max-width: 350px;
+    margin-left: 100px;
+    
+}
+
+.equipments-text p{
+    margin-right: 50px;
+}
+
+.equipments-text button{
+    margin: 30px 0;
+}
+
+/*food*/
+#food{
+    padding: 100px 0;
+}
+
+.food-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.food-left-col{
+    flex-basis: 50%;
+}
+
+.food-right-col{
+    flex-basis: 50%;
+}
+
+.food-right-col img{
+    width: 100%;
+}
+
+.food-text{
+    max-width: 350px;
+    margin-left: 100px;
+}
+
+.food-text button{
+    margin: 30px 0;
+}
+
+/*donate*/
+#donate{
+    padding: 100px 0;
+}
+
+.donate-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.donate-left-col{
+    flex-basis: 50%;
+}
+
+.donate-right-col{
+    flex-basis: 50%;
+}
+
+.donate-right-col img{
+    width: 100%;
+}
+
+.donate-text{
+    max-width: 350px;
+    margin-left: 100px;
+}
+
+.donate-text button{
+    margin: 30px 0;
+}
+
+
+/* Contact */
+.contact-row{
+    display: flex;
+    align-items: center;
+
+}
+
+.contact-left-col{
+    flex-basis: 50%;
+    margin-left: 50px;
+}
+
+.contact-right-col{
+    flex-basis: 50%;    
+}
+
+.contact-right-col img{
+    width: 100%;
+}
+
+form{
+    max-width: 350px;
+    margin: 30px 0;
+}
+
+form input, textarea{
+    width: 100%;
+    padding: 12px 10px;
+    margin-bottom: 5px;
+    outline: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+
+/* footer */
+
+#footer{
+    padding: 50px 0 30px;
+}
+
+hr{
+    width: 100%;
+    border: 0;
+    border-top: 1px solid black;
+}
+
+.footer-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-left-col{
+    flex-basis: 50%;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+.footer-right-col{
+    flex-basis: 35%;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.link-title h4{
+    color: black;
+    margin-bottom: 20px;
+}
+
+.link-title small{
+    font-size: 13px;
+    color: gray;
+}
+
+.footer-info{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-logo img{
+    width: 100px;
+}
+
+.footer-logo button{
+    padding: 12px 38px;
+    margin-top: 20px;
+    font-size: 10px;
+}
+
+.copyright-text, .footer-logo{
+    flex-basis: 40%;
+}
+
+.copyright-text a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Social Icons */
+
+#social-icons{
+    width: 50px;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+    font-size: 40px;
+}
+
+#social-icons .fa{
+    color: black;
+    display: block;
+    width: 20px;
+    margin: 0 auto 20px;
+    cursor: pointer;
+}
+
+#social-icons a{
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 700px){
+    #header{
+        background-image: url("img2.jpg");
+    }
+
+    .header-text{
+        margin: 140px 100px 100px 100px;
+    }
+    
+    .header-text h1{
+        font-size: 25px;
+    }
+
+    .container{
+        margin-left: 60px;
+        margin-right: 50px;
+    }
+
+    .common-button{
+        padding: 10px 16px;
+    }
+
+    .common-button:hover{
+        font-size: 12px;
+    }
+
+    #social-icons .fa{
+        color: black;
+        width: 14px;
+        margin: 15px auto; 
+    }
+
+    .about-left-col, .about-right-col{
+        flex-basis: 100%;
+    }
+
+    .about-text{
+        margin: 50px 50px 0;
+        display: inline-block
+    }
+    
+    .about-text h2{
+        font-size: 18px;
+        font-style: italic;
+    }
+
+
+
+    .diseases-left-col, .diseases-right-col{
+        flex-basis: 100%;
+    }
+
+    .diseases-text{
+        margin: 50px 50px 0;
+        display: inline-block
+    }
+    
+    .diseases-text h2{
+        font-size: 18px;
+        font-style: italic;
+    }
+
+
+
+    .help-left-col, .help-right-col{
+        flex-basis: 100%;
+    }
+
+    .help-text{
+        margin: 50px 50px 0;
+        display: inline-block
+    }
+    
+    .help-text h2{
+        font-size: 18px;
+        font-style: italic;
+    }
+
+
+
+    .equipments-left-col, .equipments-right-col{
+        flex-basis: 100%;
+    }
+
+    .equipments-text{
+        margin: 50px 50px 0;
+        display: inline-block
+    }
+    
+    .equipments-text h2{
+        font-size: 18px;
+        font-style: italic;
+    }
+
+
+
+    .food-left-col, .food-right-col{
+        flex-basis: 100%;
+    }
+
+    .food-text{
+        margin: 50px 50px 0;
+        display: inline-block
+    }
+    
+    .food-text h2{
+        font-size: 18px;
+        font-style: italic;
+    }
+
+
+
+    .donate-left-col, .donate-right-col{
+        flex-basis: 100%;
+    }
+
+    .donate-text{
+        margin: 50px 50px 0;
+        display: inline-block
+    }
+    
+    .donate-text h2{
+        font-size: 18px;
+        font-style: italic;
+    }
+
+    .feature-col{
+        flex-basis: 100%;
+    }
+
+    .feature-col p{
+        margin-bottom: 40px;
+    }
+
+    .disease-left-col{
+        flex-basis: 100%;
+    }
+
+    .disease-right-col{
+        flex-basis: 100%;
+        margin-top: 50px;
+    }
+
+    .contact-left-col{
+        flex-basis: 100%;
+    }
+    
+    .contact-right-col{
+        flex-basis: 100%;
+        margin-top: 50px;
+    }
+
+    .footer-left-col,.footer-right-col{
+        flex-basis: 100%;
+    }
+
+    .link-title{
+        flex-basis: 50%;
+        margin-bottom: 30px;
+    }
+    
+}
